@@ -15,8 +15,6 @@ import ToggleColorMode from "./ToggleColorMode";
 const logoStyle = {
   width: "50px",
   height: "50px",
-  cursor: "pointer",
-  transition: "transform 0.3s ease-in-out",
 };
 
 const AppAppBar = ({ mode, toggleColorMode }) => {
@@ -80,10 +78,6 @@ const AppAppBar = ({ mode, toggleColorMode }) => {
               src={"images/memoji.png"}
               style={logoStyle}
               alt="logo"
-              onMouseOver={(e) =>
-                (e.currentTarget.style.transform = "scale(1.1)")
-              }
-              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
             />
             <Box
               sx={{
