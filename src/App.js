@@ -4,6 +4,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import AppAppBar from './components/AppAppBar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const App = () => {
     const [mode, setMode] = React.useState('light');
@@ -28,6 +31,9 @@ const App = () => {
             <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
             <Hero />
             <About />
+            <Experience />
+            <Projects />
+            <Contact />
         </ThemeProvider>
     );
 };
