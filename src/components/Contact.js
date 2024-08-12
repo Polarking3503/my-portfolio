@@ -8,7 +8,7 @@ const primaryButtonColor = '#0d47a1';  // New primary button color
 const secondaryButtonColor = '#00796b';  // New secondary button color
 
 const StyledDiv = styled('div')(({ theme }) => ({
-    boxShadow: `0px 4px 10px ${theme.palette.grey[300]}`,
+    boxShadow: `0px 4px 10px ${theme.palette.grey[500]}`,
     padding: theme.spacing(4),
     textAlign: 'center',
     width: '100%',

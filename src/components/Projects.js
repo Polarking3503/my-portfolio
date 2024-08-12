@@ -11,12 +11,12 @@ import { styled } from '@mui/material/styles';
 
 const StyledCard = styled(Card)(({ theme }) => ({
     borderRadius: '12px',
-    boxShadow: `0px 4px 10px ${theme.palette.grey[300]}`,
+   
     transition: 'transform 0.3s, box-shadow 0.3s',
     '&:hover': {
         transform: 'translateY(-10px)',
-        boxShadow: `0px 10px 20px ${theme.palette.grey[400]}`,
-    },
+        boxShadow: `0px 10px 20px rgba(2, 136, 209, 0.5)`,
+        },
 }));
 
 const ProjectImage = styled('img')({
@@ -98,19 +98,19 @@ const Projects = () => {
 const projects = [
     {
         title: 'RMRY',
-        description: 'Desarrollé la aplicación RMRY para especialistas de equinos en Jalisco usando PHP, JavaScript, Bootstrap, y CSS.',
+        description: 'Desarrollé la aplicación RMRY para especialistas de equinos en Jalisco usando PHP, JavaScript, Bootstrap, y CSS. La aplicación permite a los especialistas registrar y gestionar información de equinos, así como generar reportes, certificados agendar y te notifica sobre los eventos de tus equinos.',
         link: 'https://demo.registroequino.com/',
         image: 'images/RMRY.png',
     },
     {
         title: 'ExentoPlus',
-        description: 'Sistema de Gestión de la Docencia ExentoPlus desarrollado utilizando principalmente Laravel 10, con pruebas automatizadas, JavaScript, y JQuery.',
+        description: 'Sistema de Gestión de la Docencia ExentoPlus desarrollado utilizando principalmente Laravel 10, con pruebas automatizadas, JavaScript, y JQuery. El sistema permite evaluar a los alumnos, docentes de la Universidad de Guadalajara. Ademas tiene un sistema de reportes y estadísticas como alerta temprana',
         link: 'https://epra.exentoplus.com/',
         image: 'images/EXENTOPLUS.png',
     },
     {
         title: 'PROESDE',
-        description: 'Desarrollé el sistema para el Programa de Estímulos al Desempeño Docente (PROESDE) usando Laravel 10, con pruebas automatizadas.',
+        description: 'Desarrollé el sistema para el Programa de Estímulos al Desempeño Docente (PROESDE) usando Laravel 10, con pruebas automatizadas.  El sistema permite a los docentes de la Universidad de Guadalajara registrar y gestionar su información académica, así como solicitar y gestionar sus estímulos docentes.',
         link: 'http://148.202.213.168/',
         image: 'images/PROESDE.png',
     },

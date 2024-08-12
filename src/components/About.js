@@ -83,11 +83,11 @@ const About = () => {
                         />
                     </animated.div>
                     <Box style={{ flex: 4 }}>
-                        <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
+                        <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold', mb: 2 }} fontFamily={"-apple-system"}>
                             Sobre mí
                         </Typography>
                         <Typography variant="body1" align="justify" sx={{ mb: 2 }}>
-                            ¡Hola! Soy Luis Jorge Reynaga, un desarrollador backend con 2 años de experiencia.
+                            ¡Hola! Soy Luis Jorge Reynaga, un desarrollador con 2 años de experiencia.
                             Me especializo en el desarrollo de aplicaciones eficientes y escalables.
                             Manteniendo codígo de alta calidad y mejorando continuamente mis habilidades.
                         </Typography>
