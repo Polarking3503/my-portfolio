@@ -16,18 +16,33 @@ const experiences = [
         date: 'Enero 2024 - Actualidad',
         title: 'Desarrollador',
         details: [
-            'Desarrollé la página web oficial de Apptlan para la promoción de servicios de desarrollo web y chatbots.',
-            'Desarrollé la aplicación RMRY para especialistas de equinos en Jalisco.',
-            'Colaboré en la implementación de nuevas funciones y supervisión de la aplicación web Raite.',
+            `Diseñé y desarrollé la página web oficial de Apptlan, enfocada en la promoción de nuestros servicios de desarrollo web y chatbots. 
+            La página web fue optimizada para SEO, lo que incrementó la visibilidad en motores de búsqueda y atrajo un 20% más de tráfico orgánico en 
+            los primeros tres meses.`,
+
+            `Transformé la gestión de equinos para especialistas en Jalisco con la aplicación RMRY, que digitalizó los procesos previamente realizados en papel. 
+            La aplicación permite recibir notificaciones sobre eventos importantes en el ciclo de vida de las yeguas y genera reportes detallados, mejorando 
+            significativamente la eficiencia y precisión en la administración equina. Actualmente tiene 100 usuarios usándolo.`,
+
+            `Contribuí a la implementación de nuevas funcionalidades en la aplicación web Raite, incluyendo la integración de un sistema de notificaciones en tiempo real 
+            y la optimización del rendimiento del frontend. Además, supervisé el proceso de desarrollo para asegurar la calidad del código y la adherencia a las mejores 
+            prácticas, lo que resultó en una experiencia de usuario más fluida y una reducción en los tiempos de carga de la aplicación.`,
         ],
     },
     {
         date: 'Agosto 2022 - Diciembre 2023',
         title: 'Colaborador',
         details: [
-            'Colaboré en la implementación de nuevas funciones del Sistema de Horas Prácticas para el Laboratorio de Aprendizaje Global en el Centro Universitario de la Costa Sur - Universidad de Guadalajara.',
-            'Colaboré en la implementación de nuevas funciones del Sistema de Gestión de la Docencia ExentoPlus.',
-            'Desarrollé el sistema para el Programa de Estímulos al Desempeño Docente (PROESDE) para el Centro Universitario de la Costa Sur - Universidad de Guadalajara.',
+            `Optimicé mejoras en el Sistema de Horas Prácticas, optimizando el registro de entrada y salida de los alumnos para evitar fraudes en la contabilización de horas.
+            Este sistema ahora es utilizado por más de 400 usuarios, asegurando un control más riguroso y transparente. Se usa en el Centro Universitario de la Costa Sur - 
+            Universidad de Guadalajara.`,
+
+            `Mejoré el sistema ExentoPlus al implementar alertas tempranas para reducir la tasa de reprobación entre los estudiantes. Además, desarrollé nuevos roles de 
+            usuario, filtros avanzados para la vista del administrador, y optimicé el sistema de evaluaciones para tutores, así como la sincronización de estudiantes con 
+            sus clases y horarios. Este sistema es utilizado por más de 1,000 usuarios, facilitando una gestión educativa más eficiente y personalizada. ExentoPlus.`,
+
+            `Desarrollé el sistema PROESDE, ayudando a la universidad a garantizar que los profesores reciban los estímulos correspondientes al subir evidencias e 
+            información relevante. Este sistema cuenta con más de 200 usuarios, proporcionando una plataforma confiable para la evaluación del desempeño docente.`,
         ],
     },
 ];
