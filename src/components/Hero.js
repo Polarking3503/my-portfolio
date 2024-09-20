@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 export default function Hero() {
   return (
@@ -78,6 +79,16 @@ export default function Hero() {
               sx={{ color: "text.primary" }}
             >
               <LinkedInIcon fontSize="large" />
+            </IconButton>
+            <IconButton
+              aria-label="CV"
+              component="a"
+              href="/files/cv-luis-jorge.pdf"
+              download
+              rel="noopener noreferrer"
+              sx={{ color: "text.primary" }}
+            >
+              <ContactPageIcon fontSize="large" />
             </IconButton>
           </Stack>
         </Stack>

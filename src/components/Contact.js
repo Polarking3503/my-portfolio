@@ -54,14 +54,7 @@ const Contact = () => {
                 <StyledTypography variant="h6">
                     Estoy disponible para nuevas oportunidades y colaboraciones. Si deseas conocer más sobre mi trabajo o discutir un proyecto, no dudes en contactarme.
                 </StyledTypography>
-                <StyledButton
-                    variant="contained"
-                    colorType="primary"
-                    href="/files/cv-luis-jorge.pdf"
-                    download
-                >
-                    Descargar CV
-                </StyledButton>
+                
                 <StyledButton
                     variant="contained"
                     colorType="secondary"
