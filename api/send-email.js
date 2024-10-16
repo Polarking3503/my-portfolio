@@ -9,8 +9,8 @@ export default async function handler(req, res) {
             port: 587,
             secure: false,
             auth: {
-                user: 'jorge@apptlan.net',
-                pass: 'LEVIgn,{,69',
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
             },
             tls: {
                 rejectUnauthorized: false,
