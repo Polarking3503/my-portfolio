@@ -8,6 +8,7 @@ import { styled } from '@mui/material/styles';
 import NearMeIcon from '@mui/icons-material/NearMe';
 import EmailIcon from '@mui/icons-material/Email';
 import Grid from '@mui/material/Grid';
+import CircularProgress from '@mui/material/CircularProgress'; // Importa el loader
 
 const StyledDiv = styled('div')(({ theme }) => ({
     boxShadow: `0px 4px 10px ${theme.palette.grey[500]}`,
@@ -34,6 +35,7 @@ const StyledButton = styled(({ colorType, ...otherProps }) => (
 const Contact = () => {
     const [formData, setFormData] = useState({ nombre: '', email: '', descripcion: '' });
     const [status, setStatus] = useState('');
+    const [isSending, setIsSending] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -45,6 +47,7 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSending(true);
         setStatus('Enviando...');
 
         try {
@@ -54,11 +57,12 @@ const Contact = () => {
         } catch (error) {
             setStatus('Hubo un error al enviar el mensaje.');
             console.error(error);
-            if (error.response) {
-                console.log(error.response.data); // Muestra detalles del error del backend
-            }
+        } finally {
+            setIsSending(false);
         }
     };
+
+    const isFormValid = formData.nombre && formData.email && formData.descripcion;
 
     return (
         <StyledDiv id="contact">
@@ -113,9 +117,10 @@ const Contact = () => {
                         />
                         <StyledButton
                             type="submit"
-                            startIcon={<NearMeIcon />}
+                            startIcon={!isSending && <NearMeIcon />}
+                            disabled={!isFormValid || isSending}
                         >
-                            Enviar
+                            {isSending ? <CircularProgress size={24} color="inherit" /> : 'Enviar'}
                         </StyledButton>
                         {status && <Typography variant="body2" sx={{ mt: 2, color: 'text.secondary' }}>{status}</Typography>}
                     </Box>
