@@ -48,7 +48,7 @@ const Contact = () => {
         setStatus('Enviando...');
 
         try {
-            await axios.post('http://localhost:5000/send-email', formData);
+            await axios.post('/api/send-email', formData);
             setStatus('Mensaje enviado con éxito.');
             setFormData({ nombre: '', email: '', descripcion: '' });
         } catch (error) {
@@ -64,7 +64,7 @@ const Contact = () => {
         <StyledDiv id="contact">
             <Grid container spacing={3} alignItems="center" justifyContent="center">
                 <Grid item xs={12} sm={6} md={6} align="center">
-                    <img src="images/mail.png" alt="Mail Icon" style={{ width: '100%', maxWidth: '500px', height: 'auto' }} />
+                    <img src="images/Mail.png" alt="Mail Icon" style={{ width: '100%', maxWidth: '500px', height: 'auto' }} />
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={6}>
