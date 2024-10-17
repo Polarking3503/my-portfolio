@@ -98,11 +98,13 @@ const Contact = () => {
                         <TextField 
                             fullWidth 
                             margin="normal" 
-                            label="Email" 
+                            label="Correo Electrónico" 
                             variant="outlined" 
                             name="email" 
                             value={formData.email} 
                             onChange={handleChange}
+                            error={formData.email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)}
+                            helperText={formData.email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email) ? 'No es un correo válido' : ''}
                         />
                         <TextField
                             fullWidth
@@ -118,7 +120,10 @@ const Contact = () => {
                         <StyledButton
                             type="submit"
                             startIcon={!isSending && <NearMeIcon />}
-                            disabled={!isFormValid || isSending}
+                            disabled={!isFormValid || isSending || (formData.email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email))}
+                            sx={{
+                                opacity: (!isFormValid || isSending || (formData.email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email))) ? 0.5 : 1,
+                            }}
                         >
                             {isSending ? <CircularProgress size={24} color="inherit" /> : 'Enviar'}
                         </StyledButton>
